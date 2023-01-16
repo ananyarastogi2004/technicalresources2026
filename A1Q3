@@ -1,0 +1,15 @@
+t = int(input())
+l = []
+for i in range(t):
+    n = int(input())
+    l.append(n)
+for num in l:
+    index = l.index(num)
+    for i in range(2,num):
+        if num % i == 0:
+            l[index] = 'not prime'
+            break
+        else:
+            l[index] = 'prime'
+for j in l:
+    print(j)
